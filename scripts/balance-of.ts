@@ -38,7 +38,7 @@ async function main() {
   )
   const totalBalance = contract.interface.decodeFunctionResult(functionName, responseMessage)[0]
 
-  console.log('Total Balance is:', ethers.formatUnits(totalBalance, 18))
+  console.log('Total Balance is:', ethers.formatUnits(totalBalance, 18), 'BLUM')
 }
 
 main().catch((error) => {
